@@ -13,11 +13,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.custom.version=$(CUSTOM_VERSION)
 
 # Updater
-ifeq ($(IS_OFFICIAL),true)
     PRODUCT_PRODUCT_PROPERTIES += \
         net.pixelos.build_type=ci \
         net.pixelos.version=$(CUSTOM_VERSION_PROP)
-endif
 
 # Signing
 ifneq (eng,$(TARGET_BUILD_VARIANT))
